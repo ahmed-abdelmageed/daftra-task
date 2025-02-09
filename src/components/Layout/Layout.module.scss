@@ -1,0 +1,21 @@
+.layoutContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.contentWrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 64px); 
+    margin-top: 64px; 
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 16px;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}

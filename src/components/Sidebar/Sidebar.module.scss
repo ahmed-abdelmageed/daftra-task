@@ -1,0 +1,172 @@
+.sidebarDesktop {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+
+    .MuiDrawer-paper {
+        width: 300px;
+        position: fixed;
+        background: #ffffff;
+    }
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+.drawerHeader{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.editIcons {
+    display: flex;
+    gap: 10px;
+}
+.actionButton {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    background: white; 
+    padding: 12px !important;
+}
+.sidebarList {
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px;
+    transition: background 0.2s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background: #f8f9fa;
+    }
+
+    .navLink {
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+    }
+}
+
+.dragHandle {
+    margin-right: 8px;
+    cursor: grab;
+    color: #666;
+    width: 22px;
+    height: 22px;
+}
+.itemIcon {
+    width: 18px;
+    height: 18px;
+}
+.itemIcons {
+    display: flex;
+    gap: 5px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.parentItem {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+    width: 100%;
+}
+
+.childList {
+    padding-left: 25px;
+}
+
+.childItem {
+    padding: 8px 15px;
+    font-size: 0.95rem;
+    border-left: 3px solid #ddd;
+
+    &:hover {
+        background: #f8f9fa;
+        border-left: 3px solid #007bff;
+    }
+}
+
+.expandIcon {
+    margin-left: auto;
+    color: #555;
+}
+
+.sidebarDesktop {
+    width: 340px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+
+    .MuiDrawer-paper {
+        width: 340px;
+        position: fixed;
+        background: #ffffff;
+    }
+}
+
+.sidebarMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sidebarMobile {
+        display: block;
+    }
+
+    .sidebarDesktop {
+        display: none; 
+    }
+}
+
+.sidebarToggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sidebarToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 50%;
+        padding: 8px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+    }
+}
+
+.closeButtonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
