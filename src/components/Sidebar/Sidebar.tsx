@@ -116,7 +116,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                         editMode={editMode}
                         toggleEditMode={toggleEditMode}
                         saveChanges={saveChanges}
-                        isMobile={true}
+                        isMobile={false}
                         setIsOpen={setIsOpen}
                     />{" "}
                     <Box>
